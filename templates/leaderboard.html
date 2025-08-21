@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Cats</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <h1>Leaderboard</h1>
-
-  <ul>
-    {% for cat, duration in zip(cats, durations) %}
-      <li> Котенок {{ cat['name'] }}
-           собрал {{ cat['coins'] }}
-           монет за {{ duration }}. </li>
-    {% endfor %}
-  </ul>
+  <table>
+      <thead>
+          <th>Игрок</th>
+          <th>Кол-во монет</th>
+          <th>Время игры</th>
+      </thead>
+      {% for cat, duration in zip(cats, durations) %}
+      <tr>
+          <td>{{ cat['name'] }}</td>
+          <td>{{ cat['coins'] }}</td>
+          <td>{{ duration }}</td>
+      </tr>
+      {% endfor %}
+  </table>
 
 </body>
 </html>

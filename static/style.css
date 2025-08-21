@@ -1,0 +1,21 @@
+/* Отступы */
+
+table {
+  table-layout: fixed;
+  width: 50%;
+  border-collapse: collapse;
+  border: 5px solid green;
+}
+
+th {
+  border: 3px solid black;
+  padding: 10px;
+}
+
+td {
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
