@@ -2,4 +2,4 @@
 /__pycache__/
 /env/
 /cats.db
-/project_toml
+/project.toml
