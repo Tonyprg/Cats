@@ -1,0 +1,5 @@
+/__python__/
+/__pycache__/
+/env/
+/cats.db
+/project_toml

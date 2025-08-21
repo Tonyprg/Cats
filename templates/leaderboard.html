@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <h1>Leaderboard</h1>
+
+  <ul>
+    {% for cat, duration in zip(cats, durations) %}
+      <li> Котенок {{ cat['name'] }}
+           собрал {{ cat['coins'] }}
+           монет за {{ duration }}. </li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>
+
