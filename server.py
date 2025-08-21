@@ -164,7 +164,7 @@ def leaderboard():
 
 @app.route('/my_skils_in_AI')
 def my_skils():
-    return '<h1>У меня нет навыков и опыта в сфере ИИ</h1>'
+    return render_template('skils.html')
 
 
 app.run()

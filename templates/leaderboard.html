@@ -15,13 +15,12 @@
       </thead>
       {% for cat, duration in zip(cats, durations) %}
       <tr>
-          <td>{{ cat['name'] }}</td>
-          <td>{{ cat['coins'] }}</td>
-          <td>{{ duration }}</td>
+          <td><div class="center-both">{{ cat['name'] }}</div></td>
+          <td><div class="center-both">{{ cat['coins'] }}</div></td>
+          <td><div class="center-both">{{ duration }}</div></td>
       </tr>
       {% endfor %}
   </table>
 
 </body>
 </html>
-
